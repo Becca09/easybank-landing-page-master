@@ -8,13 +8,14 @@
         overflow-x: hidden;
     }
 
-    .left_side .phoneImage img {
+   .left_side .phoneImage{
         display: none;
     }
 
     .hamburger {
         display: none;
     }
+
 
     header {
         display: flex;
@@ -27,27 +28,43 @@
         margin: 2% 0 2% 10%;
     }
 
-    header nav a {
+    header .menu {
+
+        display: flex   ;
         text-decoration: none;
-        margin: 0 2%;
         justify-content: center;
         align-content: center;
-        color: hsl(233, 8%, 62%);
+
     }
 
-    nav {
+    header ul {
+        width: 50%;
+         
+    }
+
+     li  {
+        list-style: none;
         width: 34%;
-        margin: 2% 0 2% 7%;
+        margin: 2% 5% 2% 0;
+       
+       
     }
 
-    nav a:hover{
+    li a{
+        color: hsl(233, 8%, 62%);
+        text-decoration: none;
+    }
+
+
+    li a:hover{
         color: aqua;
     }
 
-    button {
+    header  button {
+        width: 70%;
         background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
         border: none;
-        margin: 2% 10% 2% 0;
+        margin: 2% 5% 2% 0;
         font-weight: bold;
         border-radius: 50px;
         align-items: center;
@@ -76,7 +93,15 @@
     }
 
     .right_side button {
+        padding:  2% 4%;
         margin-left: 20%;
+        background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+        border: none;
+        font-weight: bold;
+        border-radius: 50px;
+        align-items: center;
+        color: white;
+        cursor: pointer;
     }
 
     .right_side p {
@@ -131,9 +156,6 @@
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
 
-    .feature {
-
-    }
 
     .feature_image {
         width: 12%;
@@ -260,6 +282,15 @@
     }
 
     .request_invite button {
+        width: 70%;
+        background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+        border: none;
+        margin: 2% 5% 2% 0;
+        font-weight: bold;
+        border-radius: 50px;
+        align-items: center;
+        color: white;
+        cursor: pointer;
         padding: 3% 13%;
     }
 
